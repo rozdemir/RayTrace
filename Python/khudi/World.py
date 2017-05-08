@@ -9,7 +9,7 @@ from __future__ import print_function
 #  * Provides the World class ....
 #  *
 #
-from time import time
+import time
 
 from khudi.scene.Scene import Scene
 
@@ -196,7 +196,7 @@ class World(object):
         print("Rendering the images: Longest path length after adjusting: " ,LENGTH)
         count = 0
         while count < LENGTH:
-            time_start = time()
+            time_start = time.time()
             it = iter(self.scene.objects)
             while True:
                 try:
@@ -214,7 +214,7 @@ class World(object):
             if not self.RenderScene(filename):
                 print("ERROR: World::RenderAnimation: Rendering scene")
             time_end = time.time()
-            print((time_end - time_start) / 1000000)
+            print ('image time',(time_end - time_start))
             count += 1
         return True
 

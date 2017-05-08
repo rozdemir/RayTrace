@@ -11,7 +11,6 @@ from __future__ import print_function
 #  * ......
 #  *
 #
-from gio._gio import FileOutputStream
 from khudi.image.Image import Image
 
 
@@ -52,41 +51,43 @@ class TGA(Image):
     def Write(self, filename):
         """ generated source for method Write """
         try:
-            out = FileOutputStream(filename)
-            out.write(0)
+
+
+            out = open(filename, 'wb')
+            out.write('%c' %0)
             #  Space for TGA header
-            out.write(0)
+            out.write('%c' %0)
             #  Space for TGA header
-            out.write(self.TYPE)
+            out.write('%c' %self.TYPE)
             #  Type of file format
-            out.write(0)
-            out.write(0)
-            out.write(0)
-            out.write(0)
-            out.write(0)
+            out.write('%c' %0)
+            out.write('%c' %0)
+            out.write('%c' %0)
+            out.write('%c' %0)
+            out.write('%c' %0)
             #  Color map specification = 0
-            out.write(0)
-            out.write(0)
+            out.write('%c' %0)
+            out.write('%c' %0)
             #  Origin X
-            out.write(0)
-            out.write(0)
+            out.write('%c' %0)
+            out.write('%c' %0)
             #  Origin Y
-            out.write(self.ROWS & 0x00FF)
-            out.write((self.ROWS & 0xFF00) / 256)
+            out.write('%c' %(self.ROWS & 0x00FF))
+            out.write('%c' %((self.ROWS & 0xFF00) / 256))
             #  Number of rows / width of image
-            out.write(self.COLS & 0x00FF)
-            out.write((self.COLS & 0xFF00) / 256)
+            out.write('%c' %(self.COLS & 0x00FF))
+            out.write('%c' %((self.COLS & 0xFF00) / 256))
             #  Number of cols / height of image
-            out.write(self.BITMAP)
+            out.write('%c' %self.BITMAP)
             #  Bitmap / Depth
-            out.write(0)
+            out.write('%c' %0)
             #  Image decriptor byte - origin in lower left-hand corner
             c = 0
             while c < self.ROWS * self.COLS:
                 #  Image data field - colors in RGB
-                out.write(self.color[c].blue)
-                out.write(self.color[c].green)
-                out.write(self.color[c].red)
+                out.write('%c' %self.color[c].blue)
+                out.write('%c' %self.color[c].green)
+                out.write('%c' %self.color[c].red)
                 c += 1
             out.close()
         except IOError as e:
