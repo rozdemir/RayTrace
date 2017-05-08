@@ -84,7 +84,7 @@ ENV/
 
 # Spyder project settings
 .spyderproject
-.java
+*.java
 .idea
 # Rope project settings
 .ropeproject
