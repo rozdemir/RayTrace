@@ -1,3 +1,4 @@
 pylint
+pylint_django
 py4j
 memory_profiler

@@ -1,0 +1,725 @@
+************* Module khudi.main
+Python/khudi/main.py:19: [C0325(superfluous-parens), ] Unnecessary parens after 'print' keyword
+Python/khudi/main.py:20: [C0325(superfluous-parens), ] Unnecessary parens after 'print' keyword
+Python/khudi/main.py:26: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/main.py:28: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/main.py:31: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/main.py:33: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/main.py:36: [C0325(superfluous-parens), ] Unnecessary parens after 'print' keyword
+Python/khudi/main.py:38: [C0325(superfluous-parens), ] Unnecessary parens after 'print' keyword
+Python/khudi/main.py:47: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/main.py:11: [C0103(invalid-name), main] Invalid class name "main"
+Python/khudi/main.py:16: [W0125(using-constant-test), main.main] Using a conditional statement with a constant value
+Python/khudi/main.py:18: [C1801(len-as-condition), main.main] Do not use `len(SEQUENCE)` as condition value
+************* Module khudi.define
+Python/khudi/define.py:9: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/define.py:11: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/define.py:23: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/define.py:25: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/define.py:26: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/define.py:30: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/define.py:39: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/define.py:6: [C0103(invalid-name), def_] Invalid class name "def_"
+Python/khudi/define.py:31: [C0103(invalid-name), def_] Invalid class attribute name "PI"
+************* Module khudi._init_
+Python/khudi/_init_.py:5: [C0304(missing-final-newline), ] Final newline missing
+************* Module khudi.World
+Python/khudi/World.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/World.py:54: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/World.py:56: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/World.py:176: [C0326(bad-whitespace), ] No space allowed before comma
+        print("Building the path(s): The longest path length: " , LENGTH)
+                                                                ^
+Python/khudi/World.py:196: [C0326(bad-whitespace), ] No space allowed before comma
+        print("Rendering the images: Longest path length after adjusting: " ,LENGTH)
+                                                                            ^
+Python/khudi/World.py:196: [C0326(bad-whitespace), ] Exactly one space required after comma
+        print("Rendering the images: Longest path length after adjusting: " ,LENGTH)
+                                                                            ^
+Python/khudi/World.py:217: [C0326(bad-whitespace), ] Exactly one space required after comma
+            print ('image time',(time_end - time_start))
+                               ^
+Python/khudi/World.py:224: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/World.py:42: [C0103(invalid-name), World.Build] Invalid method name "Build"
+Python/khudi/World.py:42: [R0915(too-many-statements), World.Build] Too many statements (67/50)
+Python/khudi/World.py:120: [C0103(invalid-name), World.RenderScene] Invalid method name "RenderScene"
+Python/khudi/World.py:129: [C0103(invalid-name), World.RenderScene] Invalid variable name "VIEWING_TYPE"
+Python/khudi/World.py:130: [C0103(invalid-name), World.RenderScene] Invalid variable name "ZOOM"
+Python/khudi/World.py:131: [C0103(invalid-name), World.RenderScene] Invalid variable name "INV_GAMMA"
+Python/khudi/World.py:148: [C0121(singleton-comparison), World.RenderScene] Comparison to None should be 'expr is None'
+Python/khudi/World.py:163: [C0103(invalid-name), World.RenderAnimation] Invalid method name "RenderAnimation"
+Python/khudi/World.py:163: [W0622(redefined-builtin), World.RenderAnimation] Redefining built-in 'dir'
+Python/khudi/World.py:163: [R0914(too-many-locals), World.RenderAnimation] Too many local variables (16/15)
+Python/khudi/World.py:166: [C0103(invalid-name), World.RenderAnimation] Invalid variable name "LENGTH"
+Python/khudi/World.py:173: [C0103(invalid-name), World.RenderAnimation] Invalid variable name "LENGTH"
+Python/khudi/World.py:175: [C0103(invalid-name), World.RenderAnimation] Invalid variable name "LEN"
+Python/khudi/World.py:192: [C0103(invalid-name), World.RenderAnimation] Invalid variable name "LEN"
+Python/khudi/World.py:194: [C0103(invalid-name), World.RenderAnimation] Invalid variable name "LEN"
+Python/khudi/World.py:195: [C0103(invalid-name), World.RenderAnimation] Invalid variable name "LENGTH"
+Python/khudi/World.py:163: [R0912(too-many-branches), World.RenderAnimation] Too many branches (15/12)
+Python/khudi/World.py:221: [C0103(invalid-name), World.minimum] Invalid argument name "d1"
+Python/khudi/World.py:221: [C0103(invalid-name), World.minimum] Invalid argument name "d2"
+Python/khudi/World.py:221: [R0201(no-self-use), World.minimum] Method could be a function
+************* Module khudi.math.Ray
+Python/khudi/math/Ray.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/math/Ray.py:23: [C0326(bad-whitespace), ] Exactly one space required after comma
+    def __init__(self, o=None,d=None):
+                             ^
+Python/khudi/math/Ray.py:24: [C0326(bad-whitespace), ] Exactly one space required after comma
+        if isinstance(o,Ray):
+                       ^
+Python/khudi/math/Ray.py:46: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/math/Ray.py:49: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/math/Ray.py:51: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/math/Ray.py:57: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/math/Ray.py:78: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/math/Ray.py:30: [C0121(singleton-comparison), Ray.__init__] Comparison to None should be 'expr is None'
+Python/khudi/math/Ray.py:30: [C0121(singleton-comparison), Ray.__init__] Comparison to None should be 'expr is None'
+Python/khudi/math/Ray.py:31: [W0105(pointless-string-statement), Ray.__init__] String statement has no effect
+Python/khudi/math/Ray.py:75: [C0103(invalid-name), Ray.HitInfo.__init__] Invalid attribute name "Normal"
+Python/khudi/math/Ray.py:74: [C0103(invalid-name), Ray.HitInfo.__init__] Invalid attribute name "Position"
+Python/khudi/math/Ray.py:77: [C0103(invalid-name), Ray.HitInfo.__init__] Invalid attribute name "Distance"
+************* Module khudi.math.Vector
+Python/khudi/math/Vector.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/math/Vector.py:20: [C0326(bad-whitespace), ] Exactly one space required after comma
+    def __init__(self, x=0.0,y=0.0,z=0.0):
+                            ^
+Python/khudi/math/Vector.py:20: [C0326(bad-whitespace), ] Exactly one space required after comma
+    def __init__(self, x=0.0,y=0.0,z=0.0):
+                                  ^
+Python/khudi/math/Vector.py:24: [C0326(bad-whitespace), ] Exactly one space required after comma
+        if isinstance(x,Vector):
+                       ^
+Python/khudi/math/Vector.py:40: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/math/Vector.py:44: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/math/Vector.py:48: [C0326(bad-whitespace), ] Exactly one space required after comma
+        if isinstance(d,Vector):
+                       ^
+Python/khudi/math/Vector.py:50: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/math/Vector.py:52: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/math/Vector.py:57: [C0326(bad-whitespace), ] Exactly one space required after comma
+        if isinstance(d,Vector):
+                       ^
+Python/khudi/math/Vector.py:59: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/math/Vector.py:60: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/math/Vector.py:65: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/math/Vector.py:69: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/math/Vector.py:74: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/math/Vector.py:78: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/math/Vector.py:90: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/math/Vector.py:37: [C0103(invalid-name), Vector.equal] Invalid argument name "v"
+Python/khudi/math/Vector.py:46: [C0103(invalid-name), Vector.plus] Invalid argument name "d"
+Python/khudi/math/Vector.py:55: [C0103(invalid-name), Vector.minus] Invalid argument name "d"
+Python/khudi/math/Vector.py:63: [C0103(invalid-name), Vector.mul] Invalid argument name "d"
+Python/khudi/math/Vector.py:67: [C0103(invalid-name), Vector.div] Invalid argument name "d"
+Python/khudi/math/Vector.py:72: [C0103(invalid-name), Vector.dot] Invalid argument name "v"
+Python/khudi/math/Vector.py:76: [C0103(invalid-name), Vector.Cross] Invalid method name "Cross"
+Python/khudi/math/Vector.py:76: [C0103(invalid-name), Vector.Cross] Invalid argument name "v"
+Python/khudi/math/Vector.py:80: [C0103(invalid-name), Vector.Length] Invalid method name "Length"
+Python/khudi/math/Vector.py:84: [C0103(invalid-name), Vector.Normalize] Invalid method name "Normalize"
+************* Module khudi.path.Path
+Python/khudi/path/Path.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/path/Path.py:98: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/path/Path.py:102: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/path/Path.py:106: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/path/Path.py:116: [C0301(line-too-long), ] Line too long (225/180)
+Python/khudi/path/Path.py:123: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/path/Path.py:126: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/path/Path.py:130: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/path/Path.py:136: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/path/Path.py:138: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/path/Path.py:149: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/path/Path.py:152: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/path/Path.py:161: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/path/Path.py:163: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/path/Path.py:226: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/path/Path.py:64: [C0103(invalid-name), Path.SetRotations] Invalid attribute name "ROTATIONS"
+Python/khudi/path/Path.py:109: [C0103(invalid-name), Path.SetLength] Invalid attribute name "STEP"
+Python/khudi/path/Path.py:43: [C0103(invalid-name), Path.__init__] Invalid attribute name "THETA"
+Python/khudi/path/Path.py:19: [R0902(too-many-instance-attributes), Path] Too many instance attributes (10/7)
+Python/khudi/path/Path.py:46: [C0103(invalid-name), Path.SetStep] Invalid method name "SetStep"
+Python/khudi/path/Path.py:46: [C0103(invalid-name), Path.SetStep] Invalid argument name "s"
+Python/khudi/path/Path.py:50: [C0103(invalid-name), Path.SetMajorAxis] Invalid method name "SetMajorAxis"
+Python/khudi/path/Path.py:50: [C0103(invalid-name), Path.SetMajorAxis] Invalid argument name "a"
+Python/khudi/path/Path.py:54: [C0103(invalid-name), Path.SetMinorAxis] Invalid method name "SetMinorAxis"
+Python/khudi/path/Path.py:54: [C0103(invalid-name), Path.SetMinorAxis] Invalid argument name "b"
+Python/khudi/path/Path.py:58: [C0103(invalid-name), Path.SetRotationAxis] Invalid method name "SetRotationAxis"
+Python/khudi/path/Path.py:58: [C0103(invalid-name), Path.SetRotationAxis] Invalid argument name "ra"
+Python/khudi/path/Path.py:62: [C0103(invalid-name), Path.SetRotations] Invalid method name "SetRotations"
+Python/khudi/path/Path.py:62: [C0103(invalid-name), Path.SetRotations] Invalid argument name "r"
+Python/khudi/path/Path.py:66: [C0103(invalid-name), Path.SetAngle] Invalid method name "SetAngle"
+Python/khudi/path/Path.py:70: [C0103(invalid-name), Path.GetStep] Invalid method name "GetStep"
+Python/khudi/path/Path.py:74: [C0103(invalid-name), Path.GetMajorAxis] Invalid method name "GetMajorAxis"
+Python/khudi/path/Path.py:78: [C0103(invalid-name), Path.GetMinorAxis] Invalid method name "GetMinorAxis"
+Python/khudi/path/Path.py:82: [C0103(invalid-name), Path.GetRotationAxis] Invalid method name "GetRotationAxis"
+Python/khudi/path/Path.py:86: [C0103(invalid-name), Path.GetRotations] Invalid method name "GetRotations"
+Python/khudi/path/Path.py:90: [C0103(invalid-name), Path.GetAngle] Invalid method name "GetAngle"
+Python/khudi/path/Path.py:94: [C0103(invalid-name), Path.SetLength] Invalid method name "SetLength"
+Python/khudi/path/Path.py:107: [C0103(invalid-name), Path.SetLength] Invalid variable name "DIVISIONS"
+Python/khudi/path/Path.py:119: [C0103(invalid-name), Path.GetLength] Invalid method name "GetLength"
+Python/khudi/path/Path.py:139: [C0103(invalid-name), Path.Build] Invalid method name "Build"
+Python/khudi/path/Path.py:139: [C0103(invalid-name), Path.Build] Invalid argument name "Xc"
+Python/khudi/path/Path.py:139: [C0103(invalid-name), Path.Build] Invalid argument name "Yc"
+Python/khudi/path/Path.py:139: [C0103(invalid-name), Path.Build] Invalid argument name "Zc"
+Python/khudi/path/Path.py:139: [W0622(redefined-builtin), Path.Build] Redefining built-in 'len'
+Python/khudi/path/Path.py:139: [R0913(too-many-arguments), Path.Build] Too many arguments (6/5)
+Python/khudi/path/Path.py:143: [C0103(invalid-name), Path.Build] Invalid variable name "X"
+Python/khudi/path/Path.py:144: [C0103(invalid-name), Path.Build] Invalid variable name "Y"
+Python/khudi/path/Path.py:145: [C0103(invalid-name), Path.Build] Invalid variable name "Z"
+Python/khudi/path/Path.py:174: [C0103(invalid-name), Path.Build] Invalid variable name "X"
+Python/khudi/path/Path.py:175: [C0103(invalid-name), Path.Build] Invalid variable name "Y"
+Python/khudi/path/Path.py:176: [C0103(invalid-name), Path.Build] Invalid variable name "Z"
+Python/khudi/path/Path.py:190: [C0103(invalid-name), Path.Build] Invalid variable name "X"
+Python/khudi/path/Path.py:191: [C0103(invalid-name), Path.Build] Invalid variable name "Y"
+Python/khudi/path/Path.py:192: [C0103(invalid-name), Path.Build] Invalid variable name "Z"
+Python/khudi/path/Path.py:206: [C1801(len-as-condition), Path.Build] Do not use `len(SEQUENCE)` as condition value
+Python/khudi/path/Path.py:207: [C0103(invalid-name), Path.Build] Invalid variable name "X"
+Python/khudi/path/Path.py:208: [C0103(invalid-name), Path.Build] Invalid variable name "Y"
+Python/khudi/path/Path.py:209: [C0103(invalid-name), Path.Build] Invalid variable name "Z"
+Python/khudi/path/Path.py:139: [R0915(too-many-statements), Path.Build] Too many statements (66/50)
+Python/khudi/path/Path.py:223: [C1801(len-as-condition), Path.print_] Do not use `len(SEQUENCE)` as condition value
+************* Module khudi.path.PathData
+Python/khudi/path/PathData.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/path/PathData.py:12: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/path/PathData.py:36: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/path/PathData.py:23: [C0103(invalid-name), PathData.Data.__init__] Invalid attribute name "Z"
+Python/khudi/path/PathData.py:22: [C0103(invalid-name), PathData.Data.__init__] Invalid attribute name "Y"
+Python/khudi/path/PathData.py:21: [C0103(invalid-name), PathData.Data.__init__] Invalid attribute name "X"
+Python/khudi/path/PathData.py:17: [C0103(invalid-name), PathData.Data] Invalid class attribute name "X"
+Python/khudi/path/PathData.py:18: [C0103(invalid-name), PathData.Data] Invalid class attribute name "Y"
+Python/khudi/path/PathData.py:19: [C0103(invalid-name), PathData.Data] Invalid class attribute name "Z"
+Python/khudi/path/PathData.py:28: [W0622(redefined-builtin), PathData.__init__] Redefining built-in 'len'
+************* Module khudi.scene.Parse
+Python/khudi/scene/Parse.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/scene/Parse.py:10: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/scene/Parse.py:44: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/scene/Parse.py:51: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/scene/Parse.py:139: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/scene/Parse.py:141: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/scene/Parse.py:149: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/scene/Parse.py:150: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/scene/Parse.py:27: [C0103(invalid-name), Parse.__init__] Invalid attribute name "Digit"
+Python/khudi/scene/Parse.py:13: [C0103(invalid-name), Parse.digit] Invalid class name "digit"
+Python/khudi/scene/Parse.py:20: [C0103(invalid-name), Parse.digit.__init__] Invalid attribute name "n"
+Python/khudi/scene/Parse.py:21: [C0103(invalid-name), Parse.digit.__init__] Invalid attribute name "v"
+Python/khudi/scene/Parse.py:15: [C0103(invalid-name), Parse.digit] Invalid class attribute name "n"
+Python/khudi/scene/Parse.py:16: [C0103(invalid-name), Parse.digit] Invalid class attribute name "v"
+Python/khudi/scene/Parse.py:29: [C0103(invalid-name), Parse.readComment] Invalid argument name "COUNT"
+Python/khudi/scene/Parse.py:31: [C0103(invalid-name), Parse.readComment] Invalid variable name "DONE"
+Python/khudi/scene/Parse.py:34: [C0103(invalid-name), Parse.readComment] Invalid variable name "DONE"
+Python/khudi/scene/Parse.py:36: [C0103(invalid-name), Parse.readComment] Invalid variable name "DONE"
+Python/khudi/scene/Parse.py:29: [R0201(no-self-use), Parse.readComment] Method could be a function
+Python/khudi/scene/Parse.py:52: [C0103(invalid-name), Parse.readDigits] Invalid argument name "COUNT"
+Python/khudi/scene/Parse.py:52: [C0103(invalid-name), Parse.readDigits] Invalid argument name "ERROR_NUMBER"
+Python/khudi/scene/Parse.py:54: [C0103(invalid-name), Parse.readDigits] Invalid variable name "DONE"
+Python/khudi/scene/Parse.py:55: [C0103(invalid-name), Parse.readDigits] Invalid variable name "SIGN"
+Python/khudi/scene/Parse.py:56: [C0103(invalid-name), Parse.readDigits] Invalid variable name "DIGIT"
+Python/khudi/scene/Parse.py:70: [C0103(invalid-name), Parse.readDigits] Invalid variable name "DIGIT"
+Python/khudi/scene/Parse.py:58: [R1702(too-many-nested-blocks), Parse.readDigits] Too many nested blocks (6/5)
+Python/khudi/scene/Parse.py:75: [C0103(invalid-name), Parse.readDigits] Invalid variable name "DONE"
+Python/khudi/scene/Parse.py:78: [C0103(invalid-name), Parse.readDigits] Invalid variable name "SIGN"
+Python/khudi/scene/Parse.py:80: [C0103(invalid-name), Parse.readDigits] Invalid variable name "DIGIT"
+Python/khudi/scene/Parse.py:58: [R1702(too-many-nested-blocks), Parse.readDigits] Too many nested blocks (6/5)
+Python/khudi/scene/Parse.py:85: [C0103(invalid-name), Parse.readDigits] Invalid variable name "DONE"
+Python/khudi/scene/Parse.py:88: [C0103(invalid-name), Parse.readDigits] Invalid variable name "SIGN"
+Python/khudi/scene/Parse.py:90: [C0103(invalid-name), Parse.readDigits] Invalid variable name "DIGIT"
+Python/khudi/scene/Parse.py:58: [R1702(too-many-nested-blocks), Parse.readDigits] Too many nested blocks (6/5)
+Python/khudi/scene/Parse.py:96: [C0103(invalid-name), Parse.readDigits] Invalid variable name "DONE"
+Python/khudi/scene/Parse.py:97: [C0103(invalid-name), Parse.readDigits] Invalid variable name "DIGIT"
+Python/khudi/scene/Parse.py:108: [C0103(invalid-name), Parse.readDigits] Invalid variable name "SIGN"
+Python/khudi/scene/Parse.py:109: [C0103(invalid-name), Parse.readDigits] Invalid variable name "DIGIT"
+Python/khudi/scene/Parse.py:116: [C0103(invalid-name), Parse.readDigits] Invalid variable name "DONE"
+Python/khudi/scene/Parse.py:121: [C0103(invalid-name), Parse.readDigits] Invalid variable name "DIGIT"
+Python/khudi/scene/Parse.py:58: [R1702(too-many-nested-blocks), Parse.readDigits] Too many nested blocks (6/5)
+Python/khudi/scene/Parse.py:126: [C0103(invalid-name), Parse.readDigits] Invalid variable name "DONE"
+Python/khudi/scene/Parse.py:52: [W0613(unused-argument), Parse.readDigits] Unused argument 'ERROR_NUMBER'
+Python/khudi/scene/Parse.py:52: [R0912(too-many-branches), Parse.readDigits] Too many branches (23/12)
+Python/khudi/scene/Parse.py:52: [R0915(too-many-statements), Parse.readDigits] Too many statements (66/50)
+Python/khudi/scene/Parse.py:142: [C0103(invalid-name), Parse.sscanf] Invalid argument name "COUNT"
+Python/khudi/scene/Parse.py:142: [R0201(no-self-use), Parse.sscanf] Method could be a function
+************* Module khudi.scene.Scene
+Python/khudi/scene/Scene.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/scene/Scene.py:157: [C0301(line-too-long), ] Line too long (223/180)
+Python/khudi/scene/Scene.py:158: [C0301(line-too-long), ] Line too long (204/180)
+Python/khudi/scene/Scene.py:164: [C0301(line-too-long), ] Line too long (223/180)
+Python/khudi/scene/Scene.py:165: [C0301(line-too-long), ] Line too long (204/180)
+Python/khudi/scene/Scene.py:554: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/scene/Scene.py:608: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/scene/Scene.py:55: [C0103(invalid-name), Scene.__init__] Invalid attribute name "ERROR_NUMBER"
+Python/khudi/scene/Scene.py:59: [C0103(invalid-name), Scene.__init__] Invalid attribute name "SPHERE_READ"
+Python/khudi/scene/Scene.py:62: [C0103(invalid-name), Scene.__init__] Invalid attribute name "MATERIAL_READ"
+Python/khudi/scene/Scene.py:63: [C0103(invalid-name), Scene.__init__] Invalid attribute name "PATH_READ"
+Python/khudi/scene/Scene.py:58: [C0103(invalid-name), Scene.__init__] Invalid attribute name "SCENE_READ"
+Python/khudi/scene/Scene.py:61: [C0103(invalid-name), Scene.__init__] Invalid attribute name "LIGHT_READ"
+Python/khudi/scene/Scene.py:54: [C0103(invalid-name), Scene.__init__] Invalid attribute name "COUNT"
+Python/khudi/scene/Scene.py:60: [C0103(invalid-name), Scene.__init__] Invalid attribute name "PLANE_READ"
+Python/khudi/scene/Scene.py:57: [C0103(invalid-name), Scene.__init__] Invalid attribute name "SHAPE_READ"
+Python/khudi/scene/Scene.py:31: [R0902(too-many-instance-attributes), Scene] Too many instance attributes (29/7)
+Python/khudi/scene/Scene.py:82: [C0103(invalid-name), Scene.Read] Invalid method name "Read"
+Python/khudi/scene/Scene.py:85: [C0103(invalid-name), Scene.Read] Invalid variable name "SIZE"
+Python/khudi/scene/Scene.py:95: [C0103(invalid-name), Scene.Read] Invalid variable name "SIZE"
+Python/khudi/scene/Scene.py:86: [W0612(unused-variable), Scene.Read] Unused variable 'temp'
+Python/khudi/scene/Scene.py:166: [W0612(unused-variable), Scene.Read] Unused variable 'e'
+Python/khudi/scene/Scene.py:82: [R0912(too-many-branches), Scene.Read] Too many branches (21/12)
+Python/khudi/scene/Scene.py:82: [R0915(too-many-statements), Scene.Read] Too many statements (81/50)
+Python/khudi/scene/Scene.py:173: [C0103(invalid-name), Scene.readScene] Invalid variable name "START"
+Python/khudi/scene/Scene.py:174: [C0103(invalid-name), Scene.readScene] Invalid variable name "DONE"
+Python/khudi/scene/Scene.py:186: [C0103(invalid-name), Scene.readScene] Invalid variable name "DONE"
+Python/khudi/scene/Scene.py:190: [C0103(invalid-name), Scene.readScene] Invalid variable name "START"
+Python/khudi/scene/Scene.py:170: [R0912(too-many-branches), Scene.readScene] Too many branches (29/12)
+Python/khudi/scene/Scene.py:170: [R0915(too-many-statements), Scene.readScene] Too many statements (80/50)
+Python/khudi/scene/Scene.py:269: [C0103(invalid-name), Scene.readSphere] Invalid variable name "START"
+Python/khudi/scene/Scene.py:270: [C0103(invalid-name), Scene.readSphere] Invalid variable name "DONE"
+Python/khudi/scene/Scene.py:280: [C0103(invalid-name), Scene.readSphere] Invalid variable name "DONE"
+Python/khudi/scene/Scene.py:284: [C0103(invalid-name), Scene.readSphere] Invalid variable name "START"
+Python/khudi/scene/Scene.py:268: [W0612(unused-variable), Scene.readSphere] Unused variable 'N'
+Python/khudi/scene/Scene.py:265: [R0912(too-many-branches), Scene.readSphere] Too many branches (21/12)
+Python/khudi/scene/Scene.py:265: [R0915(too-many-statements), Scene.readSphere] Too many statements (61/50)
+Python/khudi/scene/Scene.py:335: [C0103(invalid-name), Scene.readPlane] Invalid variable name "START"
+Python/khudi/scene/Scene.py:336: [C0103(invalid-name), Scene.readPlane] Invalid variable name "DONE"
+Python/khudi/scene/Scene.py:345: [C0103(invalid-name), Scene.readPlane] Invalid variable name "DONE"
+Python/khudi/scene/Scene.py:349: [C0103(invalid-name), Scene.readPlane] Invalid variable name "START"
+Python/khudi/scene/Scene.py:334: [W0612(unused-variable), Scene.readPlane] Unused variable 'N'
+Python/khudi/scene/Scene.py:331: [R0912(too-many-branches), Scene.readPlane] Too many branches (18/12)
+Python/khudi/scene/Scene.py:331: [R0915(too-many-statements), Scene.readPlane] Too many statements (51/50)
+Python/khudi/scene/Scene.py:390: [C0103(invalid-name), Scene.readLight] Invalid variable name "START"
+Python/khudi/scene/Scene.py:391: [C0103(invalid-name), Scene.readLight] Invalid variable name "DONE"
+Python/khudi/scene/Scene.py:400: [C0103(invalid-name), Scene.readLight] Invalid variable name "DONE"
+Python/khudi/scene/Scene.py:403: [C0103(invalid-name), Scene.readLight] Invalid variable name "START"
+Python/khudi/scene/Scene.py:389: [W0612(unused-variable), Scene.readLight] Unused variable 'N'
+Python/khudi/scene/Scene.py:426: [C0103(invalid-name), Scene.readMaterial] Invalid variable name "START"
+Python/khudi/scene/Scene.py:427: [C0103(invalid-name), Scene.readMaterial] Invalid variable name "DONE"
+Python/khudi/scene/Scene.py:436: [C0103(invalid-name), Scene.readMaterial] Invalid variable name "DONE"
+Python/khudi/scene/Scene.py:439: [C0103(invalid-name), Scene.readMaterial] Invalid variable name "START"
+Python/khudi/scene/Scene.py:425: [W0612(unused-variable), Scene.readMaterial] Unused variable 'N'
+Python/khudi/scene/Scene.py:422: [R0912(too-many-branches), Scene.readMaterial] Too many branches (15/12)
+Python/khudi/scene/Scene.py:473: [C0103(invalid-name), Scene.readPath] Invalid variable name "START"
+Python/khudi/scene/Scene.py:474: [C0103(invalid-name), Scene.readPath] Invalid variable name "DONE"
+Python/khudi/scene/Scene.py:486: [C0103(invalid-name), Scene.readPath] Invalid variable name "DONE"
+Python/khudi/scene/Scene.py:489: [C0103(invalid-name), Scene.readPath] Invalid variable name "START"
+Python/khudi/scene/Scene.py:472: [W0612(unused-variable), Scene.readPath] Unused variable 'N'
+Python/khudi/scene/Scene.py:469: [R0912(too-many-branches), Scene.readPath] Too many branches (18/12)
+Python/khudi/scene/Scene.py:469: [R0915(too-many-statements), Scene.readPath] Too many statements (51/50)
+Python/khudi/scene/Scene.py:524: [C0103(invalid-name), Scene.GetVersion] Invalid method name "GetVersion"
+Python/khudi/scene/Scene.py:528: [C0103(invalid-name), Scene.GetWidth] Invalid method name "GetWidth"
+Python/khudi/scene/Scene.py:532: [C0103(invalid-name), Scene.GetHeight] Invalid method name "GetHeight"
+Python/khudi/scene/Scene.py:536: [C0103(invalid-name), Scene.GetViewType] Invalid method name "GetViewType"
+Python/khudi/scene/Scene.py:540: [C0103(invalid-name), Scene.GetZoom] Invalid method name "GetZoom"
+Python/khudi/scene/Scene.py:544: [C0103(invalid-name), Scene.GetGamma] Invalid method name "GetGamma"
+Python/khudi/scene/Scene.py:548: [C0103(invalid-name), Scene.GetBGColor] Invalid method name "GetBGColor"
+Python/khudi/scene/Scene.py:552: [C0103(invalid-name), Scene.GetNumberOfShapes] Invalid method name "GetNumberOfShapes"
+Python/khudi/scene/Scene.py:556: [C0103(invalid-name), Scene.GetNumberOfSpheres] Invalid method name "GetNumberOfSpheres"
+Python/khudi/scene/Scene.py:560: [C0103(invalid-name), Scene.GetNumberOfPaths] Invalid method name "GetNumberOfPaths"
+Python/khudi/scene/Scene.py:564: [C0103(invalid-name), Scene.GetNumberOfPlanes] Invalid method name "GetNumberOfPlanes"
+Python/khudi/scene/Scene.py:568: [C0103(invalid-name), Scene.GetNumberOfLights] Invalid method name "GetNumberOfLights"
+Python/khudi/scene/Scene.py:572: [C0103(invalid-name), Scene.GetSpheres] Invalid method name "GetSpheres"
+Python/khudi/scene/Scene.py:576: [C0103(invalid-name), Scene.GetPaths] Invalid method name "GetPaths"
+Python/khudi/scene/Scene.py:580: [C0103(invalid-name), Scene.GetPlanes] Invalid method name "GetPlanes"
+Python/khudi/scene/Scene.py:584: [C0103(invalid-name), Scene.GetLights] Invalid method name "GetLights"
+Python/khudi/scene/Scene.py:588: [C0103(invalid-name), Scene.SetZoom] Invalid method name "SetZoom"
+Python/khudi/scene/Scene.py:592: [C0103(invalid-name), Scene.Print] Invalid method name "Print"
+Python/khudi/scene/Scene.py:31: [R0904(too-many-public-methods), Scene] Too many public methods (25/20)
+************* Module khudi.color.RGBColor
+Python/khudi/color/RGBColor.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/color/RGBColor.py:11: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/color/RGBColor.py:35: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/color/RGBColor.py:37: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/color/RGBColor.py:43: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/color/RGBColor.py:46: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/color/RGBColor.py:53: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/color/RGBColor.py:55: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/color/RGBColor.py:60: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/color/RGBColor.py:64: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/color/RGBColor.py:68: [C0325(superfluous-parens), ] Unnecessary parens after 'return' keyword
+Python/khudi/color/RGBColor.py:69: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/color/RGBColor.py:32: [C0103(invalid-name), RGBColor.plus] Invalid argument name "d"
+Python/khudi/color/RGBColor.py:39: [C0103(invalid-name), RGBColor.minus] Invalid argument name "d"
+Python/khudi/color/RGBColor.py:42: [R1705(no-else-return), RGBColor.minus] Unnecessary "else" after "return"
+Python/khudi/color/RGBColor.py:49: [C0103(invalid-name), RGBColor.mul] Invalid argument name "d"
+Python/khudi/color/RGBColor.py:58: [C0103(invalid-name), RGBColor.div] Invalid argument name "d"
+Python/khudi/color/RGBColor.py:66: [C0103(invalid-name), RGBColor.power] Invalid argument name "p"
+************* Module khudi.material.Material
+Python/khudi/material/Material.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/material/Material.py:34: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/material/Material.py:43: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/material/Material.py:97: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/material/Material.py:35: [C0103(invalid-name), Material.GetGloss] Invalid method name "GetGloss"
+Python/khudi/material/Material.py:39: [C0103(invalid-name), Material.SetGloss] Invalid method name "SetGloss"
+Python/khudi/material/Material.py:45: [C0103(invalid-name), Material.GetTransparency] Invalid method name "GetTransparency"
+Python/khudi/material/Material.py:49: [C0103(invalid-name), Material.SetTransparency] Invalid method name "SetTransparency"
+Python/khudi/material/Material.py:55: [C0103(invalid-name), Material.GetReflection] Invalid method name "GetReflection"
+Python/khudi/material/Material.py:62: [C0103(invalid-name), Material.SetReflection] Invalid method name "SetReflection"
+Python/khudi/material/Material.py:66: [C0103(invalid-name), Material.GetRefractionIn] Invalid method name "GetRefractionIn"
+Python/khudi/material/Material.py:70: [C0103(invalid-name), Material.SetRefractionIn] Invalid method name "SetRefractionIn"
+Python/khudi/material/Material.py:74: [C0103(invalid-name), Material.GetRefractionOut] Invalid method name "GetRefractionOut"
+Python/khudi/material/Material.py:78: [C0103(invalid-name), Material.SetRefractionOut] Invalid method name "SetRefractionOut"
+Python/khudi/material/Material.py:85: [C0103(invalid-name), Material.HasTexture] Invalid method name "HasTexture"
+Python/khudi/material/Material.py:85: [R0201(no-self-use), Material.HasTexture] Method could be a function
+Python/khudi/material/Material.py:90: [C0103(invalid-name), Material.GetColor] Invalid method name "GetColor"
+Python/khudi/material/Material.py:94: [C0103(invalid-name), Material.SetColor] Invalid method name "SetColor"
+************* Module khudi.light.Light
+Python/khudi/light/Light.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/light/Light.py:11: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/light/Light.py:42: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/light/Light.py:27: [C0103(invalid-name), Light.SetPosition] Invalid method name "SetPosition"
+Python/khudi/light/Light.py:27: [C0103(invalid-name), Light.SetPosition] Invalid argument name "v"
+Python/khudi/light/Light.py:31: [C0103(invalid-name), Light.GetPosition] Invalid method name "GetPosition"
+Python/khudi/light/Light.py:35: [C0103(invalid-name), Light.GetColor] Invalid method name "GetColor"
+Python/khudi/light/Light.py:39: [C0103(invalid-name), Light.SetColor] Invalid method name "SetColor"
+************* Module khudi.trace.RayTracer
+Python/khudi/trace/RayTracer.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/trace/RayTracer.py:40: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/trace/RayTracer.py:42: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/trace/RayTracer.py:61: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/trace/RayTracer.py:64: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/trace/RayTracer.py:68: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/trace/RayTracer.py:70: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/trace/RayTracer.py:78: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/trace/RayTracer.py:82: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/trace/RayTracer.py:87: [C0326(bad-whitespace), ] No space allowed before :
+            for next_value  in it :
+                                  ^
+Python/khudi/trace/RayTracer.py:185: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/trace/RayTracer.py:44: [C0103(invalid-name), RayTracer.RayTrace] Invalid method name "RayTrace"
+Python/khudi/trace/RayTracer.py:44: [C0103(invalid-name), RayTracer.RayTrace] Invalid argument name "t"
+Python/khudi/trace/RayTracer.py:65: [W0622(redefined-builtin), RayTracer.RayTrace] Redefining built-in 'dir'
+Python/khudi/trace/RayTracer.py:44: [R0913(too-many-arguments), RayTracer.RayTrace] Too many arguments (6/5)
+Python/khudi/trace/RayTracer.py:44: [R0914(too-many-locals), RayTracer.RayTrace] Too many local variables (31/15)
+Python/khudi/trace/RayTracer.py:47: [C0103(invalid-name), RayTracer.RayTrace] Invalid variable name "HIT"
+Python/khudi/trace/RayTracer.py:53: [C0103(invalid-name), RayTracer.RayTrace] Invalid variable name "HIT"
+Python/khudi/trace/RayTracer.py:104: [C0121(singleton-comparison), RayTracer.RayTrace] Comparison to None should be 'expr is None'
+Python/khudi/trace/RayTracer.py:124: [C0121(singleton-comparison), RayTracer.RayTrace] Comparison to None should be 'expr is None'
+Python/khudi/trace/RayTracer.py:139: [C0121(singleton-comparison), RayTracer.RayTrace] Comparison to None should be 'expr is None'
+Python/khudi/trace/RayTracer.py:44: [R0912(too-many-branches), RayTracer.RayTrace] Too many branches (22/12)
+Python/khudi/trace/RayTracer.py:44: [R0915(too-many-statements), RayTracer.RayTrace] Too many statements (86/50)
+Python/khudi/trace/RayTracer.py:147: [C0103(invalid-name), RayTracer.refract] Invalid argument name "n1"
+Python/khudi/trace/RayTracer.py:147: [C0103(invalid-name), RayTracer.refract] Invalid argument name "n2"
+Python/khudi/trace/RayTracer.py:147: [W0622(redefined-builtin), RayTracer.refract] Redefining built-in 'dir'
+Python/khudi/trace/RayTracer.py:147: [R0201(no-self-use), RayTracer.refract] Method could be a function
+Python/khudi/trace/RayTracer.py:158: [W0622(redefined-builtin), RayTracer.reflect] Redefining built-in 'dir'
+Python/khudi/trace/RayTracer.py:158: [R0201(no-self-use), RayTracer.reflect] Method could be a function
+Python/khudi/trace/RayTracer.py:164: [C0103(invalid-name), RayTracer.reflectance] Invalid argument name "n1"
+Python/khudi/trace/RayTracer.py:164: [C0103(invalid-name), RayTracer.reflectance] Invalid argument name "n2"
+Python/khudi/trace/RayTracer.py:164: [W0622(redefined-builtin), RayTracer.reflectance] Redefining built-in 'dir'
+Python/khudi/trace/RayTracer.py:164: [R0201(no-self-use), RayTracer.reflectance] Method could be a function
+Python/khudi/trace/RayTracer.py:180: [R0201(no-self-use), RayTracer.transmission] Method could be a function
+************* Module khudi.image.TGA
+Python/khudi/image/TGA.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/image/TGA.py:105: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/image/TGA.py:39: [C0103(invalid-name), TGA.__init__] Invalid attribute name "COUNT"
+Python/khudi/image/TGA.py:36: [C0103(invalid-name), TGA.__init__] Invalid attribute name "TYPE"
+Python/khudi/image/TGA.py:38: [C0103(invalid-name), TGA.__init__] Invalid attribute name "COLS"
+Python/khudi/image/TGA.py:37: [C0103(invalid-name), TGA.__init__] Invalid attribute name "ROWS"
+Python/khudi/image/TGA.py:35: [C0103(invalid-name), TGA.__init__] Invalid attribute name "BITMAP"
+Python/khudi/image/TGA.py:93: [W0612(unused-variable), TGA.Write] Unused variable 'e'
+************* Module khudi.image.Image
+Python/khudi/image/Image.py:20: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/image/Image.py:10: [C0103(invalid-name), Image.Read] Invalid method name "Read"
+Python/khudi/image/Image.py:14: [C0103(invalid-name), Image.Write] Invalid method name "Write"
+Python/khudi/image/Image.py:18: [C0103(invalid-name), Image.SetColor] Invalid method name "SetColor"
+Python/khudi/image/Image.py:18: [C0103(invalid-name), Image.SetColor] Invalid argument name "r"
+Python/khudi/image/Image.py:18: [C0103(invalid-name), Image.SetColor] Invalid argument name "g"
+Python/khudi/image/Image.py:18: [C0103(invalid-name), Image.SetColor] Invalid argument name "b"
+************* Module khudi.shape.Tee
+Python/khudi/shape/Tee.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Tee.py:11: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Tee.py:19: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/shape/Tee.py:18: [C0103(invalid-name), Tee.__init__] Invalid attribute name "t"
+Python/khudi/shape/Tee.py:14: [C0103(invalid-name), Tee] Invalid class attribute name "t"
+************* Module khudi.shape.Shape
+Python/khudi/shape/Shape.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Shape.py:22: [C0326(bad-whitespace), ] No space allowed around keyword argument assignment
+    def __init__(self, shape = None):
+                             ^
+Python/khudi/shape/Shape.py:96: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/shape/Shape.py:24: [C0121(singleton-comparison), Shape.__init__] Comparison to None should be 'expr is None'
+Python/khudi/shape/Shape.py:46: [C0103(invalid-name), Shape.SetMaterial] Invalid method name "SetMaterial"
+Python/khudi/shape/Shape.py:50: [C0103(invalid-name), Shape.GetMaterial] Invalid method name "GetMaterial"
+Python/khudi/shape/Shape.py:54: [C0103(invalid-name), Shape.SetPath] Invalid method name "SetPath"
+Python/khudi/shape/Shape.py:59: [C0103(invalid-name), Shape.SetPathData] Invalid method name "SetPathData"
+Python/khudi/shape/Shape.py:64: [C0103(invalid-name), Shape.HasPath] Invalid method name "HasPath"
+Python/khudi/shape/Shape.py:68: [C0103(invalid-name), Shape.HasPathData] Invalid method name "HasPathData"
+Python/khudi/shape/Shape.py:72: [C0103(invalid-name), Shape.GetPath] Invalid method name "GetPath"
+Python/khudi/shape/Shape.py:76: [C0103(invalid-name), Shape.GetPathData] Invalid method name "GetPathData"
+Python/khudi/shape/Shape.py:80: [C0103(invalid-name), Shape.SetStartAngle] Invalid method name "SetStartAngle"
+Python/khudi/shape/Shape.py:84: [C0103(invalid-name), Shape.GetStartAngle] Invalid method name "GetStartAngle"
+Python/khudi/shape/Shape.py:88: [C0103(invalid-name), Shape.SetPosition] Invalid method name "SetPosition"
+Python/khudi/shape/Shape.py:88: [C0103(invalid-name), Shape.SetPosition] Invalid argument name "X"
+Python/khudi/shape/Shape.py:88: [C0103(invalid-name), Shape.SetPosition] Invalid argument name "Y"
+Python/khudi/shape/Shape.py:88: [C0103(invalid-name), Shape.SetPosition] Invalid argument name "Z"
+Python/khudi/shape/Shape.py:91: [C0103(invalid-name), Shape.GetPosition] Invalid method name "GetPosition"
+Python/khudi/shape/Shape.py:94: [C0103(invalid-name), Shape.Hit] Invalid method name "Hit"
+Python/khudi/shape/Shape.py:94: [C0103(invalid-name), Shape.Hit] Invalid argument name "t"
+************* Module khudi.shape.Plane
+Python/khudi/shape/Plane.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Plane.py:22: [C0326(bad-whitespace), ] Exactly one space required after comma
+    def __init__(self, a=None,b=None):
+                             ^
+Python/khudi/shape/Plane.py:25: [C0326(bad-whitespace), ] Exactly one space required around comparison
+        if a==None and b==None:
+            ^^
+Python/khudi/shape/Plane.py:25: [C0326(bad-whitespace), ] Exactly one space required around comparison
+        if a==None and b==None:
+                        ^^
+Python/khudi/shape/Plane.py:29: [C0326(bad-whitespace), ] Exactly one space required after comma
+        elif isinstance(a,Plane):
+                         ^
+Python/khudi/shape/Plane.py:31: [C0326(bad-whitespace), ] Exactly one space required around assignment
+            p=a
+             ^
+Python/khudi/shape/Plane.py:68: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Plane.py:77: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Plane.py:80: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Plane.py:85: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Plane.py:100: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/shape/Plane.py:25: [C0121(singleton-comparison), Plane.__init__] Comparison to None should be 'expr is None'
+Python/khudi/shape/Plane.py:25: [C0121(singleton-comparison), Plane.__init__] Comparison to None should be 'expr is None'
+Python/khudi/shape/Plane.py:44: [C0103(invalid-name), Plane.SetPoint] Invalid method name "SetPoint"
+Python/khudi/shape/Plane.py:44: [C0103(invalid-name), Plane.SetPoint] Invalid argument name "v"
+Python/khudi/shape/Plane.py:48: [C0103(invalid-name), Plane.GetPoint] Invalid method name "GetPoint"
+Python/khudi/shape/Plane.py:52: [C0103(invalid-name), Plane.SetNormalVector] Invalid method name "SetNormalVector"
+Python/khudi/shape/Plane.py:52: [C0103(invalid-name), Plane.SetNormalVector] Invalid argument name "v"
+Python/khudi/shape/Plane.py:56: [C0103(invalid-name), Plane.GetNormalVector] Invalid method name "GetNormalVector"
+************* Module khudi.shape.Sphere
+Python/khudi/shape/Sphere.py:5: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Sphere.py:25: [C0326(bad-whitespace), ] Exactly one space required after comma
+    def __init__(self, a=None,b=None):
+                             ^
+Python/khudi/shape/Sphere.py:29: [C0326(bad-whitespace), ] Exactly one space required around comparison
+        if a==None and b==None:
+            ^^
+Python/khudi/shape/Sphere.py:29: [C0326(bad-whitespace), ] Exactly one space required around comparison
+        if a==None and b==None:
+                        ^^
+Python/khudi/shape/Sphere.py:32: [C0326(bad-whitespace), ] Exactly one space required after comma
+        if isinstance(a,Vector):
+                       ^
+Python/khudi/shape/Sphere.py:68: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Sphere.py:73: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Sphere.py:76: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Sphere.py:79: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Sphere.py:82: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Sphere.py:88: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Sphere.py:95: [C0303(trailing-whitespace), ] Trailing whitespace
+Python/khudi/shape/Sphere.py:125: [C0305(trailing-newlines), ] Trailing newlines
+Python/khudi/shape/Sphere.py:29: [C0121(singleton-comparison), Sphere.__init__] Comparison to None should be 'expr is None'
+Python/khudi/shape/Sphere.py:29: [C0121(singleton-comparison), Sphere.__init__] Comparison to None should be 'expr is None'
+Python/khudi/shape/Sphere.py:44: [C0103(invalid-name), Sphere.SetCenter] Invalid method name "SetCenter"
+Python/khudi/shape/Sphere.py:44: [C0103(invalid-name), Sphere.SetCenter] Invalid argument name "c"
+Python/khudi/shape/Sphere.py:48: [C0103(invalid-name), Sphere.GetCenter] Invalid method name "GetCenter"
+Python/khudi/shape/Sphere.py:52: [C0103(invalid-name), Sphere.SetRadius] Invalid method name "SetRadius"
+Python/khudi/shape/Sphere.py:52: [C0103(invalid-name), Sphere.SetRadius] Invalid argument name "r"
+Python/khudi/shape/Sphere.py:56: [C0103(invalid-name), Sphere.GetRadius] Invalid method name "GetRadius"
+Python/khudi/shape/Sphere.py:102: [C0103(invalid-name), Sphere.Hit] Invalid variable name "D"
+
+
+Report
+======
+1530 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |30     |30         |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |24     |24         |=          |100.00      |12.50    |
++---------+-------+-----------+-----------+------------+---------+
+|method   |139    |139        |=          |100.00      |58.99    |
++---------+-------+-----------+-----------+------------+---------+
+|function |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    khudi 
+      \-World (khudi.main)
+      \-color 
+      | \-RGBColor (khudi.World,khudi.material.Material,khudi.scene.Scene,khudi.trace.RayTracer)
+      \-define (khudi.World,khudi.main,khudi.path.Path,khudi.scene.Scene,khudi.trace.RayTracer)
+      \-image 
+      | \-Image (khudi.image.TGA)
+      | \-TGA (khudi.World)
+      \-light 
+      | \-Light (khudi.scene.Scene)
+      \-material 
+      | \-Material (khudi.math.Ray,khudi.scene.Scene)
+      \-math 
+      | \-Ray (khudi.World,khudi.trace.RayTracer)
+      | \-Vector (khudi.World,khudi.math.Ray,khudi.scene.Scene,khudi.shape.Plane,khudi.shape.Sphere)
+      \-path 
+      | \-Path (khudi.scene.Scene)
+      | \-PathData (khudi.path.Path)
+      \-scene 
+      | \-Parse (khudi.scene.Scene)
+      | \-Scene (khudi.World)
+      \-shape 
+      | \-Plane (khudi.scene.Scene)
+      | \-Shape (khudi.shape.Plane,khudi.shape.Sphere)
+      | \-Tee (khudi.World,khudi.trace.RayTracer)
+      \-trace 
+        \-RayTracer (khudi.World)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |1586   |66.33 |1586     |=          |
++----------+-------+------+---------+-----------+
+|docstring |184    |7.70  |184      |=          |
++----------+-------+------+---------+-----------+
+|comment   |338    |14.14 |338      |=          |
++----------+-------+------+---------+-----------+
+|empty     |283    |11.84 |283      |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |393    |393      |=          |
++-----------+-------+---------+-----------+
+|refactor   |38     |38       |=          |
++-----------+-------+---------+-----------+
+|warning    |18     |18       |=          |
++-----------+-------+---------+-----------+
+|error      |0      |0        |=          |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++------------------------+------+--------+---------+-----------+
+|module                  |error |warning |refactor |convention |
++========================+======+========+=========+===========+
+|khudi.scene.Scene       |0.00  |38.89   |34.21    |15.52      |
++------------------------+------+--------+---------+-----------+
+|khudi.trace.RayTracer   |0.00  |22.22   |21.05    |5.60       |
++------------------------+------+--------+---------+-----------+
+|khudi.scene.Parse       |0.00  |5.56    |21.05    |9.67       |
++------------------------+------+--------+---------+-----------+
+|khudi.World             |0.00  |5.56    |10.53    |5.85       |
++------------------------+------+--------+---------+-----------+
+|khudi.path.Path         |0.00  |5.56    |7.89     |14.25      |
++------------------------+------+--------+---------+-----------+
+|khudi.math.Ray          |0.00  |5.56    |0.00     |3.31       |
++------------------------+------+--------+---------+-----------+
+|khudi.main              |0.00  |5.56    |0.00     |2.80       |
++------------------------+------+--------+---------+-----------+
+|khudi.path.PathData     |0.00  |5.56    |0.00     |2.29       |
++------------------------+------+--------+---------+-----------+
+|khudi.image.TGA         |0.00  |5.56    |0.00     |1.78       |
++------------------------+------+--------+---------+-----------+
+|khudi.material.Material |0.00  |0.00    |2.63     |4.33       |
++------------------------+------+--------+---------+-----------+
+|khudi.color.RGBColor    |0.00  |0.00    |2.63     |4.33       |
++------------------------+------+--------+---------+-----------+
+|khudi.math.Vector       |0.00  |0.00    |0.00     |6.87       |
++------------------------+------+--------+---------+-----------+
+|khudi.shape.Sphere      |0.00  |0.00    |0.00     |5.60       |
++------------------------+------+--------+---------+-----------+
+|khudi.shape.Shape       |0.00  |0.00    |0.00     |5.34       |
++------------------------+------+--------+---------+-----------+
+|khudi.shape.Plane       |0.00  |0.00    |0.00     |4.83       |
++------------------------+------+--------+---------+-----------+
+|khudi.define            |0.00  |0.00    |0.00     |2.29       |
++------------------------+------+--------+---------+-----------+
+|khudi.light.Light       |0.00  |0.00    |0.00     |2.04       |
++------------------------+------+--------+---------+-----------+
+|khudi.image.Image       |0.00  |0.00    |0.00     |1.78       |
++------------------------+------+--------+---------+-----------+
+|khudi.shape.Tee         |0.00  |0.00    |0.00     |1.27       |
++------------------------+------+--------+---------+-----------+
+|khudi._init_            |0.00  |0.00    |0.00     |0.25       |
++------------------------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++-----------------------------+------------+
+|message id                   |occurrences |
++=============================+============+
+|invalid-name                 |233         |
++-----------------------------+------------+
+|trailing-whitespace          |72          |
++-----------------------------+------------+
+|superfluous-parens           |27          |
++-----------------------------+------------+
+|bad-whitespace               |22          |
++-----------------------------+------------+
+|trailing-newlines            |19          |
++-----------------------------+------------+
+|singleton-comparison         |11          |
++-----------------------------+------------+
+|too-many-statements          |9           |
++-----------------------------+------------+
+|too-many-branches            |9           |
++-----------------------------+------------+
+|unused-variable              |8           |
++-----------------------------+------------+
+|no-self-use                  |8           |
++-----------------------------+------------+
+|redefined-builtin            |7           |
++-----------------------------+------------+
+|line-too-long                |5           |
++-----------------------------+------------+
+|too-many-nested-blocks       |4           |
++-----------------------------+------------+
+|len-as-condition             |3           |
++-----------------------------+------------+
+|too-many-locals              |2           |
++-----------------------------+------------+
+|too-many-instance-attributes |2           |
++-----------------------------+------------+
+|too-many-arguments           |2           |
++-----------------------------+------------+
+|using-constant-test          |1           |
++-----------------------------+------------+
+|unused-argument              |1           |
++-----------------------------+------------+
+|too-many-public-methods      |1           |
++-----------------------------+------------+
+|pointless-string-statement   |1           |
++-----------------------------+------------+
+|no-else-return               |1           |
++-----------------------------+------------+
+|missing-final-newline        |1           |
++-----------------------------+------------+
+
+
+
+
+------------------------------------------------------------------
+Your code has been rated at 7.07/10 (previous run: 7.07/10, +0.00)
+
