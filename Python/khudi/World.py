@@ -214,7 +214,7 @@ class World(object):
             if not self.RenderScene(filename):
                 print("ERROR: World::RenderAnimation: Rendering scene")
             time_end = time.time()
-            print ('image time',(time_end - time_start))
+            print ('image time',(int)(time_end - time_start), 'seconds')
             count += 1
         return True
 

@@ -2,6 +2,12 @@
 """ generated source for module main """
 #from __future__ import print_function
 # package: khudi
+
+import sys
+import os.path
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 import time
 from khudi.World import World
 
@@ -32,7 +38,7 @@ class main(object):
                         #  TIMING
                         # 
                         time_end = time.time()
-                        print 'total time ', ((time_end - time_start))
+                        print 'total time ', (int)((time_end - time_start)), 'seconds'
                     print("Finished Rendering images")
             else:
                 print("Error reading the scene file or images dir")
