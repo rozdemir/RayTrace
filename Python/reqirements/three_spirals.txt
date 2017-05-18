@@ -1,0 +1,1609 @@
+!------------------------------------------------------------------
+!
+! - First comes the definition of Scene
+!   and then Materials
+! - The color of material range from 0 - 1
+! - After that shapes (like sphere and
+!   planes etc) and lights can be defined
+!   anywhere
+! - The color of light range from 0 - 1
+! - Spaces between digits are ignored
+! - An elliptic path can be defined
+!   Details are given below for path definition
+!
+! RESTRIONS:
+!
+! Only Transparency is enough, no need for
+! RefractionIn and RefractionOut:
+!
+! Number of Planes only 1 just as a untransparent back wall
+!
+!
+! SAMPLE SCENE.TXT FILE DEFINING THREE SPIRALS
+!
+!
+!------------------------------------------------------------------
+
+!-----------------------------------------
+!                Scene
+!-----------------------------------------
+Scene
+{
+  ! Version
+  Version = 1;
+  ! Output image dimension with background color
+  Width = 1200;
+  Height = 768;
+  BGColor = 0.1, 0.1, 0.1;
+  ! Viewtypes:
+  ! Orthographic = 0
+  ! Perspective = 1
+  ! Any other number should be changed to default
+  ViewType = 1;
+  ! Zoom ranges from 0.0 and up where
+  ! 0.0 --> nothing
+  ! 1.0 --> no zoom
+  ! 2.0 --> double the size
+  ! 0.5 --> half the size
+  Zoom = 1.0;
+  Gamma = 1.5;
+
+  ! Count the number of objects in the scene
+  NumberOfMaterials = 4;
+  NumberOfPaths = 3;
+  NumberOfSpheres = 180;
+  NumberOfPlanes = 1;
+  NumberOfLights = 3;
+}
+
+!-----------------------------------------
+!            List of materials
+!-----------------------------------------
+Material
+{
+  Reflection = 0.0;
+!  RefractionIn = 1.0;
+!  RefractionOut = 1.0;
+  Transparency = 0.0;
+  Color = 1.0, 1.0, 0.0;
+}
+
+Material
+{
+  Reflection = 0.0;
+  Transparency = 0.0;
+  Color = 0.0, 1.0, 1.0;
+}
+
+Material
+{
+  Reflection = 0.0;
+  Transparency = 0.0;
+  Color = 1.0, 0.0, 1.0;
+}
+
+! Material for the plane as back wall
+! Transparency will always be taken as 0
+Material
+{
+  Reflection = 0.0;
+  Transparency = 0.0;
+  Color = 0.5, 0.5, 0.5;
+}
+
+! Elliptic path for sphere animation
+! Rotate (RotationAxis) along X(1) or Y(2) or Z(3) axis
+! Major and minor axises are the major and minor radii
+! Angle in degrees the object is going to rotate along the RotationAxis
+! Rotation is the length of the path in degrees.
+! 1.0 Rotation is a full cycle (360 degrees) and so on
+Path
+{
+  Step = 10;
+  MajorAxis = 500.0;
+  MinorAxis = 300.0;
+  RotationAxis = 1;
+  Angle = 90.0;
+  Rotations = 1.0;
+}
+
+Path
+{
+  Step = 10;
+  MajorAxis = 500.0;
+  MinorAxis = 300.0;
+  RotationAxis = 1;
+  Angle = 90.0;
+  Rotations = 1.0;
+}
+
+Path
+{
+  Step = 10;
+  MajorAxis = 500.0;
+  MinorAxis = 300.0;
+  RotationAxis = 1;
+  Angle = 90.0;
+  Rotations = 1.0;
+}
+
+!-----------------------------------------
+!         Plane as a back wall
+!-----------------------------------------
+Plane
+{
+  Point = 0.0, 0.0, 800.0;
+  NormalVector = 0.0, 0.0, 1.0;
+  Material.Id = 3;
+}
+
+!-----------------------------------------
+!            List of spheres
+!-----------------------------------------
+
+! 3 X AXIS SPIRALS
+
+Sphere
+{
+  Center = 1100.00, 184.00, 0.00;
+  Radius = 40.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 0.00;
+}
+Sphere
+{
+  Center = 1097.26, 184.00, 31.36;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 6.00;
+}
+Sphere
+{
+  Center = 1089.07, 184.00, 62.37;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 12.00;
+}
+Sphere
+{
+  Center = 1075.53, 184.00, 92.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 18.00;
+}
+Sphere
+{
+  Center = 1056.77, 184.00, 122.02;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 24.00;
+}
+Sphere
+{
+  Center = 1033.01, 184.00, 150.00;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 30.00;
+}
+Sphere
+{
+  Center = 1004.51, 184.00, 176.34;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 36.00;
+}
+Sphere
+{
+  Center = 971.57, 184.00, 200.74;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 42.00;
+}
+Sphere
+{
+  Center = 934.57, 184.00, 222.94;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 48.00;
+}
+Sphere
+{
+  Center = 893.89, 184.00, 242.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 54.00;
+}
+Sphere
+{
+  Center = 850.00, 184.00, 259.81;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 60.00;
+}
+Sphere
+{
+  Center = 803.37, 184.00, 274.06;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 66.00;
+}
+Sphere
+{
+  Center = 754.51, 184.00, 285.32;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 72.00;
+}
+Sphere
+{
+  Center = 703.96, 184.00, 293.44;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 78.00;
+}
+Sphere
+{
+  Center = 652.26, 184.00, 298.36;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 84.00;
+}
+Sphere
+{
+  Center = 600.00, 184.00, 300.00;
+  Radius = 40.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 90.00;
+}
+Sphere
+{
+  Center = 547.74, 184.00, 298.36;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 96.00;
+}
+Sphere
+{
+  Center = 496.04, 184.00, 293.44;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 102.00;
+}
+Sphere
+{
+  Center = 445.49, 184.00, 285.32;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 108.00;
+}
+Sphere
+{
+  Center = 396.63, 184.00, 274.06;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 114.00;
+}
+Sphere
+{
+  Center = 350.00, 184.00, 259.81;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 120.00;
+}
+Sphere
+{
+  Center = 306.11, 184.00, 242.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 126.00;
+}
+Sphere
+{
+  Center = 265.43, 184.00, 222.94;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 132.00;
+}
+Sphere
+{
+  Center = 228.43, 184.00, 200.74;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 138.00;
+}
+Sphere
+{
+  Center = 195.49, 184.00, 176.34;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 144.00;
+}
+Sphere
+{
+  Center = 166.99, 184.00, 150.00;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 150.00;
+}
+Sphere
+{
+  Center = 143.23, 184.00, 122.02;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 156.00;
+}
+Sphere
+{
+  Center = 124.47, 184.00, 92.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 162.00;
+}
+Sphere
+{
+  Center = 110.93, 184.00, 62.37;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 168.00;
+}
+Sphere
+{
+  Center = 102.74, 184.00, 31.36;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 174.00;
+}
+Sphere
+{
+  Center = 100.00, 184.00, -0.00;
+  Radius = 40.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 180.00;
+}
+Sphere
+{
+  Center = 102.74, 184.00, -31.36;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 186.00;
+}
+Sphere
+{
+  Center = 110.93, 184.00, -62.37;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 192.00;
+}
+Sphere
+{
+  Center = 124.47, 184.00, -92.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 198.00;
+}
+Sphere
+{
+  Center = 143.23, 184.00, -122.02;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 204.00;
+}
+Sphere
+{
+  Center = 166.99, 184.00, -150.00;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 210.00;
+}
+Sphere
+{
+  Center = 195.49, 184.00, -176.34;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 216.00;
+}
+Sphere
+{
+  Center = 228.43, 184.00, -200.74;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 222.00;
+}
+Sphere
+{
+  Center = 265.43, 184.00, -222.94;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 228.00;
+}
+Sphere
+{
+  Center = 306.11, 184.00, -242.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 234.00;
+}
+Sphere
+{
+  Center = 350.00, 184.00, -259.81;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 240.00;
+}
+Sphere
+{
+  Center = 396.63, 184.00, -274.06;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 246.00;
+}
+Sphere
+{
+  Center = 445.49, 184.00, -285.32;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 252.00;
+}
+Sphere
+{
+  Center = 496.04, 184.00, -293.44;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 258.00;
+}
+Sphere
+{
+  Center = 547.74, 184.00, -298.36;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 264.00;
+}
+Sphere
+{
+  Center = 600.00, 184.00, -300.00;
+  Radius = 40.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 270.00;
+}
+Sphere
+{
+  Center = 652.26, 184.00, -298.36;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 276.00;
+}
+Sphere
+{
+  Center = 703.96, 184.00, -293.44;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 282.00;
+}
+Sphere
+{
+  Center = 754.51, 184.00, -285.32;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 288.00;
+}
+Sphere
+{
+  Center = 803.37, 184.00, -274.06;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 294.00;
+}
+Sphere
+{
+  Center = 850.00, 184.00, -259.81;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 300.00;
+}
+Sphere
+{
+  Center = 893.89, 184.00, -242.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 306.00;
+}
+Sphere
+{
+  Center = 934.57, 184.00, -222.94;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 312.00;
+}
+Sphere
+{
+  Center = 971.57, 184.00, -200.74;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 318.00;
+}
+Sphere
+{
+  Center = 1004.51, 184.00, -176.34;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 324.00;
+}
+Sphere
+{
+  Center = 1033.01, 184.00, -150.00;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 330.00;
+}
+Sphere
+{
+  Center = 1056.77, 184.00, -122.02;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 336.00;
+}
+Sphere
+{
+  Center = 1075.53, 184.00, -92.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 0;
+  StartAngle = 342.00;
+}
+Sphere
+{
+  Center = 1089.07, 184.00, -62.37;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 0;
+  StartAngle = 348.00;
+}
+Sphere
+{
+  Center = 1097.26, 184.00, -31.36;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 0;
+  StartAngle = 354.00;
+}
+Sphere
+{
+  Center = 1100.00, 384.00, 0.00;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 0.00;
+}
+Sphere
+{
+  Center = 1097.26, 384.00, 31.36;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 6.00;
+}
+Sphere
+{
+  Center = 1089.07, 384.00, 62.37;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 12.00;
+}
+Sphere
+{
+  Center = 1075.53, 384.00, 92.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 18.00;
+}
+Sphere
+{
+  Center = 1056.77, 384.00, 122.02;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 24.00;
+}
+Sphere
+{
+  Center = 1033.01, 384.00, 150.00;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 30.00;
+}
+Sphere
+{
+  Center = 1004.51, 384.00, 176.34;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 36.00;
+}
+Sphere
+{
+  Center = 971.57, 384.00, 200.74;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 42.00;
+}
+Sphere
+{
+  Center = 934.57, 384.00, 222.94;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 48.00;
+}
+Sphere
+{
+  Center = 893.89, 384.00, 242.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 54.00;
+}
+Sphere
+{
+  Center = 850.00, 384.00, 259.81;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 60.00;
+}
+Sphere
+{
+  Center = 803.37, 384.00, 274.06;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 66.00;
+}
+Sphere
+{
+  Center = 754.51, 384.00, 285.32;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 72.00;
+}
+Sphere
+{
+  Center = 703.96, 384.00, 293.44;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 78.00;
+}
+Sphere
+{
+  Center = 652.26, 384.00, 298.36;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 84.00;
+}
+Sphere
+{
+  Center = 600.00, 384.00, 300.00;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 90.00;
+}
+Sphere
+{
+  Center = 547.74, 384.00, 298.36;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 96.00;
+}
+Sphere
+{
+  Center = 496.04, 384.00, 293.44;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 102.00;
+}
+Sphere
+{
+  Center = 445.49, 384.00, 285.32;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 108.00;
+}
+Sphere
+{
+  Center = 396.63, 384.00, 274.06;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 114.00;
+}
+Sphere
+{
+  Center = 350.00, 384.00, 259.81;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 120.00;
+}
+Sphere
+{
+  Center = 306.11, 384.00, 242.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 126.00;
+}
+Sphere
+{
+  Center = 265.43, 384.00, 222.94;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 132.00;
+}
+Sphere
+{
+  Center = 228.43, 384.00, 200.74;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 138.00;
+}
+Sphere
+{
+  Center = 195.49, 384.00, 176.34;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 144.00;
+}
+Sphere
+{
+  Center = 166.99, 384.00, 150.00;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 150.00;
+}
+Sphere
+{
+  Center = 143.23, 384.00, 122.02;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 156.00;
+}
+Sphere
+{
+  Center = 124.47, 384.00, 92.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 162.00;
+}
+Sphere
+{
+  Center = 110.93, 384.00, 62.37;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 168.00;
+}
+Sphere
+{
+  Center = 102.74, 384.00, 31.36;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 174.00;
+}
+Sphere
+{
+  Center = 100.00, 384.00, -0.00;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 180.00;
+}
+Sphere
+{
+  Center = 102.74, 384.00, -31.36;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 186.00;
+}
+Sphere
+{
+  Center = 110.93, 384.00, -62.37;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 192.00;
+}
+Sphere
+{
+  Center = 124.47, 384.00, -92.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 198.00;
+}
+Sphere
+{
+  Center = 143.23, 384.00, -122.02;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 204.00;
+}
+Sphere
+{
+  Center = 166.99, 384.00, -150.00;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 210.00;
+}
+Sphere
+{
+  Center = 195.49, 384.00, -176.34;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 216.00;
+}
+Sphere
+{
+  Center = 228.43, 384.00, -200.74;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 222.00;
+}
+Sphere
+{
+  Center = 265.43, 384.00, -222.94;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 228.00;
+}
+Sphere
+{
+  Center = 306.11, 384.00, -242.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 234.00;
+}
+Sphere
+{
+  Center = 350.00, 384.00, -259.81;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 240.00;
+}
+Sphere
+{
+  Center = 396.63, 384.00, -274.06;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 246.00;
+}
+Sphere
+{
+  Center = 445.49, 384.00, -285.32;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 252.00;
+}
+Sphere
+{
+  Center = 496.04, 384.00, -293.44;
+  Radius = 50.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 258.00;
+}
+Sphere
+{
+  Center = 547.74, 384.00, -298.36;
+  Radius = 50.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 264.00;
+}
+Sphere
+{
+  Center = 600.00, 384.00, -300.00;
+  Radius = 50.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 270.00;
+}
+Sphere
+{
+  Center = 652.26, 384.00, -298.36;
+  Radius = 50.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 276.00;
+}
+Sphere
+{
+  Center = 703.96, 384.00, -293.44;
+  Radius = 50.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 282.00;
+}
+Sphere
+{
+  Center = 754.51, 384.00, -285.32;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 288.00;
+}
+Sphere
+{
+  Center = 803.37, 384.00, -274.06;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 294.00;
+}
+Sphere
+{
+  Center = 850.00, 384.00, -259.81;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 300.00;
+}
+Sphere
+{
+  Center = 893.89, 384.00, -242.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 306.00;
+}
+Sphere
+{
+  Center = 934.57, 384.00, -222.94;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 312.00;
+}
+Sphere
+{
+  Center = 971.57, 384.00, -200.74;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 318.00;
+}
+Sphere
+{
+  Center = 1004.51, 384.00, -176.34;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 324.00;
+}
+Sphere
+{
+  Center = 1033.01, 384.00, -150.00;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 330.00;
+}
+Sphere
+{
+  Center = 1056.77, 384.00, -122.02;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 336.00;
+}
+Sphere
+{
+  Center = 1075.53, 384.00, -92.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 1;
+  StartAngle = 342.00;
+}
+Sphere
+{
+  Center = 1089.07, 384.00, -62.37;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 1;
+  StartAngle = 348.00;
+}
+Sphere
+{
+  Center = 1097.26, 384.00, -31.36;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 1;
+  StartAngle = 354.00;
+}
+Sphere
+{
+  Center = 1100.00, 584.00, 0.00;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 0.00;
+}
+Sphere
+{
+  Center = 1097.26, 584.00, 31.36;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 6.00;
+}
+Sphere
+{
+  Center = 1089.07, 584.00, 62.37;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 12.00;
+}
+Sphere
+{
+  Center = 1075.53, 584.00, 92.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 18.00;
+}
+Sphere
+{
+  Center = 1056.77, 584.00, 122.02;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 24.00;
+}
+Sphere
+{
+  Center = 1033.01, 584.00, 150.00;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 30.00;
+}
+Sphere
+{
+  Center = 1004.51, 584.00, 176.34;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 36.00;
+}
+Sphere
+{
+  Center = 971.57, 584.00, 200.74;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 42.00;
+}
+Sphere
+{
+  Center = 934.57, 584.00, 222.94;
+  Radius = 40.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 48.00;
+}
+Sphere
+{
+  Center = 893.89, 584.00, 242.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 54.00;
+}
+Sphere
+{
+  Center = 850.00, 584.00, 259.81;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 60.00;
+}
+Sphere
+{
+  Center = 803.37, 584.00, 274.06;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 66.00;
+}
+Sphere
+{
+  Center = 754.51, 584.00, 285.32;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 72.00;
+}
+Sphere
+{
+  Center = 703.96, 584.00, 293.44;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 78.00;
+}
+Sphere
+{
+  Center = 652.26, 584.00, 298.36;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 84.00;
+}
+Sphere
+{
+  Center = 600.00, 584.00, 300.00;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 90.00;
+}
+Sphere
+{
+  Center = 547.74, 584.00, 298.36;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 96.00;
+}
+Sphere
+{
+  Center = 496.04, 584.00, 293.44;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 102.00;
+}
+Sphere
+{
+  Center = 445.49, 584.00, 285.32;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 108.00;
+}
+Sphere
+{
+  Center = 396.63, 584.00, 274.06;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 114.00;
+}
+Sphere
+{
+  Center = 350.00, 584.00, 259.81;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 120.00;
+}
+Sphere
+{
+  Center = 306.11, 584.00, 242.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 126.00;
+}
+Sphere
+{
+  Center = 265.43, 584.00, 222.94;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 132.00;
+}
+Sphere
+{
+  Center = 228.43, 584.00, 200.74;
+  Radius = 40.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 138.00;
+}
+Sphere
+{
+  Center = 195.49, 584.00, 176.34;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 144.00;
+}
+Sphere
+{
+  Center = 166.99, 584.00, 150.00;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 150.00;
+}
+Sphere
+{
+  Center = 143.23, 584.00, 122.02;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 156.00;
+}
+Sphere
+{
+  Center = 124.47, 584.00, 92.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 162.00;
+}
+Sphere
+{
+  Center = 110.93, 584.00, 62.37;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 168.00;
+}
+Sphere
+{
+  Center = 102.74, 584.00, 31.36;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 174.00;
+}
+Sphere
+{
+  Center = 100.00, 584.00, -0.00;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 180.00;
+}
+Sphere
+{
+  Center = 102.74, 584.00, -31.36;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 186.00;
+}
+Sphere
+{
+  Center = 110.93, 584.00, -62.37;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 192.00;
+}
+Sphere
+{
+  Center = 124.47, 584.00, -92.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 198.00;
+}
+Sphere
+{
+  Center = 143.23, 584.00, -122.02;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 204.00;
+}
+Sphere
+{
+  Center = 166.99, 584.00, -150.00;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 210.00;
+}
+Sphere
+{
+  Center = 195.49, 584.00, -176.34;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 216.00;
+}
+Sphere
+{
+  Center = 228.43, 584.00, -200.74;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 222.00;
+}
+Sphere
+{
+  Center = 265.43, 584.00, -222.94;
+  Radius = 40.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 228.00;
+}
+Sphere
+{
+  Center = 306.11, 584.00, -242.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 234.00;
+}
+Sphere
+{
+  Center = 350.00, 584.00, -259.81;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 240.00;
+}
+Sphere
+{
+  Center = 396.63, 584.00, -274.06;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 246.00;
+}
+Sphere
+{
+  Center = 445.49, 584.00, -285.32;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 252.00;
+}
+Sphere
+{
+  Center = 496.04, 584.00, -293.44;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 258.00;
+}
+Sphere
+{
+  Center = 547.74, 584.00, -298.36;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 264.00;
+}
+Sphere
+{
+  Center = 600.00, 584.00, -300.00;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 270.00;
+}
+Sphere
+{
+  Center = 652.26, 584.00, -298.36;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 276.00;
+}
+Sphere
+{
+  Center = 703.96, 584.00, -293.44;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 282.00;
+}
+Sphere
+{
+  Center = 754.51, 584.00, -285.32;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 288.00;
+}
+Sphere
+{
+  Center = 803.37, 584.00, -274.06;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 294.00;
+}
+Sphere
+{
+  Center = 850.00, 584.00, -259.81;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 300.00;
+}
+Sphere
+{
+  Center = 893.89, 584.00, -242.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 306.00;
+}
+Sphere
+{
+  Center = 934.57, 584.00, -222.94;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 312.00;
+}
+Sphere
+{
+  Center = 971.57, 584.00, -200.74;
+  Radius = 40.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 318.00;
+}
+Sphere
+{
+  Center = 1004.51, 584.00, -176.34;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 324.00;
+}
+Sphere
+{
+  Center = 1033.01, 584.00, -150.00;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 330.00;
+}
+Sphere
+{
+  Center = 1056.77, 584.00, -122.02;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 336.00;
+}
+Sphere
+{
+  Center = 1075.53, 584.00, -92.71;
+  Radius = 30.00;
+  Material.Id = 0;
+  Path.Id = 2;
+  StartAngle = 342.00;
+}
+Sphere
+{
+  Center = 1089.07, 584.00, -62.37;
+  Radius = 30.00;
+  Material.Id = 1;
+  Path.Id = 2;
+  StartAngle = 348.00;
+}
+Sphere
+{
+  Center = 1097.26, 584.00, -31.36;
+  Radius = 30.00;
+  Material.Id = 2;
+  Path.Id = 2;
+  StartAngle = 354.00;
+}
+
+!-----------------------------------------
+!         List of lights
+!-----------------------------------------
+! Center middle
+Light
+{
+  Position = 512.0, 384.0, -1000.0;
+  Color = 0.5, 0.5, 0.5;
+}
+
+! Center middle
+Light
+{
+  Position = 512.0, 384.0, 1000.0;
+  Color = 0.2, 0.2, 0.2;
+}
+
+! Top middle
+Light
+{
+  Position = 512.0, 768.0, -1000.0;
+  Color = 0.3, 0.3, 0.3;
+}
